@@ -19,7 +19,7 @@ a{color:var(--oro)}.lnk{background:none;border:0;color:var(--oro);text-decoratio
 .nota button{border:1px solid var(--oro);background:transparent;color:var(--txt);border-radius:8px;padding:6px 14px;cursor:pointer;font-weight:600;align-self:flex-end}
 .chat{display:flex;flex-direction:column;gap:6px}.chat:empty{display:none}.m{background:var(--bg);border:1px solid var(--linea);border-radius:10px;padding:6px 10px;font-size:14.5px;white-space:pre-wrap}.m b{color:var(--suave);font-weight:600;font-size:12.5px;display:block}
 .av{color:var(--verde);font-size:13px}
-</style></head><body><main>
+.item[hidden]{display:none}</style></head><body><main>
 <h1>Pendientes de marketing</h1>
 <p class="sub">Al 2 de noviembre de 2026, de lo más urgente a lo menos. Al marcar la casilla de una tarea, el equipo de marketing ve que quedó resuelta. En cada tarea se puede dejar una nota o una respuesta.</p>
 
@@ -56,7 +56,7 @@ a{color:var(--oro)}.lnk{background:none;border:0;color:var(--oro);text-decoratio
 
 <h2><span class="pt" style="background:var(--naranja)"></span>Próximos días</h2>
 
-<div class="item" data-k="fb"><div class="t">Crear el Facebook de trabajo con verificación en dos pasos</div>
+<div class="item" data-k="fb" hidden><div class="t">Crear el Facebook de trabajo con verificación en dos pasos</div>
 <div class="d">Para agregarlo al Business Manager con control total.</div>
 <div class="meta"><span class="tag">Pendiente</span></div></div>
 
@@ -111,7 +111,7 @@ async function enviar(reg){const f=new URLSearchParams();reg.cuenta=CFG.cuenta;r
 const L=k=>{try{return localStorage.getItem(k)}catch(e){return null}},S=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
 function burbuja(it,quien,texto){const c=it.querySelector('.chat'),m=document.createElement('div');m.className='m';m.innerHTML='<b></b>';m.firstChild.textContent=quien;m.append(texto);c.append(m)}
 let n=0;
-document.querySelectorAll('.item').forEach(it=>{
+document.querySelectorAll('.item:not([hidden])').forEach(it=>{
   const k=it.dataset.k;n++;
   const ch=document.createElement('label');ch.className='chk';ch.title='Marcar como hecha';ch.innerHTML='<input type="checkbox"><span>'+n+'</span>';it.prepend(ch);
   const meta=it.querySelector('.meta')||it.appendChild(Object.assign(document.createElement('div'),{className:'meta'}));
