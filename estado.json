@@ -1,5 +1,12 @@
 {
- "leido": "2026-11-02 12:43",
- "estado": {},
+ "leido": "2026-11-02 16:31",
+ "estado": {
+  "det": "hecho",
+  "empujon": "hecho",
+  "jte": "hecho",
+  "log": "hecho",
+  "mx": "hecho",
+  "pre": "hecho"
+ },
  "notas": {}
 }
