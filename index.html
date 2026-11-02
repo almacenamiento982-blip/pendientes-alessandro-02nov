@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pendientes de marketing</title>
+<style>
+:root{--bg:#121211;--card:#1b1a18;--txt:#eeeae2;--suave:#a39d90;--linea:#2f2c27;--oro:#c9a34e;--rojo:#e0695a;--naranja:#e0a24a;--verde:#7fb77e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:15.5px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:980px;margin:0 auto;padding:28px 16px 60px}h1{margin:0 0 4px;font-size:27px}.sub{color:var(--suave);margin:0 0 20px}
+h2{font-size:18px;margin:30px 0 10px;display:flex;align-items:center;gap:10px}h2 .pt{width:12px;height:12px;border-radius:50%;flex:none}
+.item{background:var(--card);border:1px solid var(--linea);border-radius:12px;padding:14px 16px;margin:0 0 10px;display:grid;grid-template-columns:34px 1fr;gap:6px 12px}
+.item>*:not(.chk){grid-column:2}.item.hecho{opacity:.5}.item.hecho .t{text-decoration:line-through}
+.chk{grid-row:1/span 4;display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:2px}
+.chk input{width:22px;height:22px;accent-color:var(--oro);cursor:pointer;margin:0}.chk span{font-weight:700;color:var(--oro);font-size:13px}
+.t{font-weight:700;font-size:16px}.d{color:var(--txt)}.d ul{margin:4px 0 0;padding-left:18px}
+.meta{color:var(--suave);font-size:13.5px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.tag{border:1px solid var(--linea);border-radius:999px;padding:1px 9px;font-size:12.5px}
+a{color:var(--oro)}.lnk{background:none;border:0;color:var(--oro);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+.nota{display:none;gap:8px;flex-wrap:wrap}.nota.on{display:flex}.nota textarea{flex:1 1 320px;min-height:60px;font:15px system-ui,sans-serif;padding:8px 10px;border-radius:8px;border:1px solid var(--linea);background:var(--bg);color:var(--txt)}
+.nota button{border:1px solid var(--oro);background:transparent;color:var(--txt);border-radius:8px;padding:6px 14px;cursor:pointer;font-weight:600;align-self:flex-end}
+.chat{display:flex;flex-direction:column;gap:6px}.chat:empty{display:none}.m{background:var(--bg);border:1px solid var(--linea);border-radius:10px;padding:6px 10px;font-size:14.5px;white-space:pre-wrap}.m b{color:var(--suave);font-weight:600;font-size:12.5px;display:block}
+.av{color:var(--verde);font-size:13px}
+</style></head><body><main>
+<h1>Pendientes de marketing</h1>
+<p class="sub">Al 2 de noviembre de 2026, de lo más urgente a lo menos. Al marcar la casilla de una tarea, el equipo de marketing ve que quedó resuelta. En cada tarea se puede dejar una nota o una respuesta.</p>
+
+<h2><span class="pt" style="background:var(--rojo)"></span>Esta semana: frenan ventas o tienen fecha encima</h2>
+
+<div class="item" data-k="det"><div class="t">Detroit: aprobar los 6 anuncios y el conjunto de USD 18/día</div>
+<div class="d">ID Camp del 28 al 30 de diciembre. Está todo listo para montar en pausa (video de Jesús, hero y 4 piezas); falta la aprobación en la página. Cada día sin pauta son inscripciones que no entran.</div>
+<div class="meta"><a href="https://almacenamiento982-blip.github.io/idcamps-revision-detroit/" target="_blank">Página de Detroit</a><span class="tag">Para el 3-nov</span></div></div>
+
+<div class="item" data-k="jte"><div class="t">JTE San Francisco + Seattle: 2 aprobaciones, el seguimiento y el cupo</div>
+<div class="d">Ya hay 6 de 8 anuncios aprobados. En las 2 piezas de ciudad el título ya se cambió a "From the US to Italy", como se pidió. Falta:
+<ul><li>aprobar esas 2 piezas (y decir si la imagen también debe decir "From the US");</li><li>aprobar el seguimiento de cada lead: Jesús llama dentro de las 24 horas y los correos y SMS se arman para aprobarlos antes de enviar;</li><li>confirmar el cupo real por fecha y la fecha de cierre de inscripciones.</li></ul></div>
+<div class="meta"><a href="https://almacenamiento982-blip.github.io/jte-campana-sf-seattle/" target="_blank">Página de JTE</a><span class="tag">Con eso se monta en pausa y se enciende</span></div></div>
+
+<div class="item" data-k="log"><div class="t">Logística a inscritos de Chicago y Dallas: hora de llegada y qué llevar</div>
+<div class="d">Correo y SMS solo para las familias que pagaron: qué llevar, horario y lugar. Chicago: correo el 12-nov y SMS el 13-nov. Dallas: 19 y 20-nov. Falta confirmar la hora de llegada (¿15 minutos antes?) y qué llevan los niños; después se pasan los textos para aprobar.</div>
+<div class="meta"><span class="tag">Camp de Chicago: 14-nov</span></div></div>
+
+<div class="item" data-k="mx"><div class="t">México: página de pago con Valerio y contactos sin pago para Ema</div>
+<div class="d"><ul><li>Revisar con Valerio el paso 2 del registro: pasarlo al español, pedir menos datos de tipo EE. UU., activar 2 cuotas, OXXO / meses sin intereses y cambiar el nombre "UNIVERSIDAD DE ORIENTE" que aparece en Stripe. Las familias abandonan en ese paso.</li><li>Enviarle a Ema los registrados sin pago de Monterrey y Puebla para el seguimiento por WhatsApp.</li></ul></div>
+<div class="meta"><span class="tag">Pendiente</span><span class="tag">Camps: 14-19 dic</span></div></div>
+
+<div class="item" data-k="pre"><div class="t">Pre-Academy: aprobar los anuncios por sede y cargar la tarjeta en la cuenta nueva</div>
+<div class="d">Landing publicada y píxel verificado. 4 anuncios, USD 33/día en 5 sedes. Con la aprobación se monta en borrador y se apaga el WhatsApp al entregar.</div>
+<div class="meta"><a href="https://almacenamiento982-blip.github.io/jam-campana-preacademy/" target="_blank">Página de Pre-Academy</a><span class="tag">Pendiente</span></div></div>
+
+<div class="item" data-k="imcf"><div class="t">Inter Miami Winter Camp (27-30 dic): responder las 8 preguntas y enviar la base del año pasado</div>
+<div class="d">Sin esas respuestas no se puede montar la campaña (cuenta, píxel, presupuesto, coaches) ni enviar el primer correo a la base de contactos.</div>
+<div class="meta"><a href="https://almacenamiento982-blip.github.io/imcf-winter-2026/" target="_blank">Página de Inter Miami</a><span class="tag">Pendiente</span></div></div>
+
+<h2><span class="pt" style="background:var(--naranja)"></span>Próximas dos semanas</h2>
+
+<div class="item" data-k="lz"><div class="t">Little Zebras: aprobar los creativos</div>
+<div class="d">Campaña directo al pago (USD 480 en PlayMetrics) con USD 6/día. Con la aprobación se monta; a los 10 días se evalúa si se pasa al plan B.</div>
+<div class="meta"><span class="tag">Evaluación: 10-nov</span></div></div>
+
+<div class="item" data-k="fb"><div class="t">Crear el Facebook de trabajo con verificación en dos pasos</div>
+<div class="d">Para agregarlo al Business Manager con control total.</div>
+<div class="meta"><span class="tag">Pendiente</span></div></div>
+
+<div class="item" data-k="smtp"><div class="t">Web de Las Vegas: qué cuenta del club usar para los correos</div>
+<div class="d">jacademylasvegas.com envía con una cuenta del programador anterior cuya clave ya no vale: 98 correos fallidos, entre ellos 15 confirmaciones de pedido que no llegaron a los compradores. Con la cuenta del club se configura y se prueba.</div>
+<div class="meta"><span class="tag">Pendiente</span></div></div>
+
+<div class="item" data-k="acc"><div class="t">Adidas Champions Cup: aprobar el plan de correos y SMS, edad mínima y tienda</div>
+<div class="d">Ya están aprobados el correo E16 y los SMS 1, 3, 4, 5 y 6. Faltan los correos E01 a E15 y el SMS 2 (el E13 y la frase "register early to get the right division" se cambian; los logos ya se corrigieron). También: ¿la edad mínima es U9 o U10?, y el enlace de la tienda 2027.</div>
+<div class="meta"><a href="https://almacenamiento982-blip.github.io/acc-plan-email-sms/" target="_blank">Página de ACC</a></div></div>
+
+<div class="item" data-k="ath"><div class="t">Athletum: Instagram nuevo, página de Facebook y las 7 preguntas del plan</div>
+<div class="d"><ul><li>Crear el Instagram nuevo con Jacopo e invitar como colaborador en los posts anteriores.</li><li>Página de Facebook y Meta Business Suite nuevos desde el Facebook de Stefano (solo Athletum).</li><li>Revisar el plan de la cuenta nueva y responder sus 7 preguntas (lista de college y pros con permiso, 60+ partidos, MLS NEXT Fest, ID Camp del 23-nov, usuario y fecha de lanzamiento).</li></ul></div>
+<div class="meta"><a href="https://almacenamiento982-blip.github.io/athletum-plan-cuenta-nueva/" target="_blank">Plan de la cuenta nueva</a><span class="tag">Pendiente</span></div></div>
+
+<div class="item" data-k="bf"><div class="t">Black Friday y descuentos: decidir la oferta</div>
+<div class="d">Black Friday (27-nov) y Cyber Monday (30-nov) para las sedes de diciembre: Midland, Hawaii, Puerto Rico, Atlanta y Detroit. En México: El Buen Fin y el descuento de Puebla y Monterrey.</div>
+<div class="meta"><span class="tag">Propuesta: 5-nov</span><span class="tag">México: 16-nov</span></div></div>
+
+<div class="item" data-k="jtebase"><div class="t">Enviar la base de contactos de Training Experience</div>
+<div class="d">Para los correos de JTE a las familias que ya mostraron interés.</div>
+<div class="meta"><span class="tag">Pendiente</span></div></div>
+
+<div class="item" data-k="lv"><div class="t">Las Vegas: evaluar el primer mes y decidir el presupuesto</div>
+<div class="d">USD 500 al mes entre Little Zebras y el competitivo.</div>
+<div class="meta"><span class="tag">9-nov</span></div></div>
+
+<div class="item" data-k="asana"><div class="t">Agencia: aviso en Asana de no tocar las campañas de ID Camps</div>
+<div class="d">La agencia lleva solo los summer camps.</div>
+<div class="meta"><span class="tag">Pendiente</span></div></div>
+
+<h2><span class="pt" style="background:var(--verde)"></span>Cuando se pueda</h2>
+
+<div class="item" data-k="wix"><div class="t">Sitios viejos de Wix: sí o no por sitio</div>
+<div class="d">Son sitios que compiten en Google con las webs nuevas.</div>
+<div class="meta"><a href="https://almacenamiento982-blip.github.io/wix-sitios-viejos/" target="_blank">Página de Wix</a></div></div>
+
+<div class="item" data-k="torneos"><div class="t">Clash y ACC 2027: datos para las parrillas</div>
+<div class="d">Clash: número de edición (5th o 6th), sedes 2027, fecha límite de inscripción, schedule y finales. ACC: categorías, edición, fecha límite, hotel, schedule e Instagram de Florida Premier.</div></div>
+
+<div class="item" data-k="tryouts"><div class="t">Athletum tryouts: lista de jugadores PRO o con college commit y aprobación de los anuncios</div>
+<div class="meta"><a href="https://almacenamiento982-blip.github.io/athletum-tryouts-aprobacion/" target="_blank">Página de tryouts</a></div></div>
+
+<div class="item" data-k="fotos"><div class="t">Acceso a la carpeta de fotos del primer equipo de Juventus</div>
+<div class="d">Para piezas de Training Experience y Summer Camps.</div></div>
+
+<div class="item" data-k="media"><div class="t">Fecha del media day de noviembre (Athletum y Pre-Academy)</div></div>
+
+<div class="item" data-k="garantia"><div class="t">Pre-Academy: idea "14 días satisfecho o reembolsado" con Cristian</div>
+<div class="d">Para las 2 sedes sin el primer mes gratis.</div></div>
+
+<div class="item" data-k="cuentas"><div class="t">Accesos: código de TikTok de @athletumfc, llamada con iLevel y cuenta de Soccer Cage Downtown</div></div>
+
+<div class="item" data-k="resid"><div class="t">Residency: link, material y si los camps de Italia son para todos los niveles</div>
+<div class="d">En pausa hasta resolver el dominio.</div></div>
+
+</main><script>
+const CFG={"accion":"https://docs.google.com/forms/d/e/1FAIpQLSeGUY8Cv9Ea08X9HkdznY9pzVoUc4Gj-GdymsVTFP86wbE5sw/formResponse","entry":{"pieza":333677581,"cuenta":724853821,"autor":299801437,"comentario":1175231019,"enviado":909195940,"tipo":1605073129},"cuenta":"pendientes_alessandro"};
+async function enviar(reg){const f=new URLSearchParams();reg.cuenta=CFG.cuenta;reg.autor=reg.autor||'Alessandro';reg.enviado=new Date().toISOString();
+  for(const k in CFG.entry)f.append('entry.'+CFG.entry[k],reg[k]??'');
+  try{await fetch(CFG.accion,{method:'POST',mode:'no-cors',body:f});return true}catch(e){return false}}
+const L=k=>{try{return localStorage.getItem(k)}catch(e){return null}},S=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+function burbuja(it,quien,texto){const c=it.querySelector('.chat'),m=document.createElement('div');m.className='m';m.innerHTML='<b></b>';m.firstChild.textContent=quien;m.append(texto);c.append(m)}
+let n=0;
+document.querySelectorAll('.item').forEach(it=>{
+  const k=it.dataset.k;n++;
+  const ch=document.createElement('label');ch.className='chk';ch.title='Marcar como hecha';ch.innerHTML='<input type="checkbox"><span>'+n+'</span>';it.prepend(ch);
+  const meta=it.querySelector('.meta')||it.appendChild(Object.assign(document.createElement('div'),{className:'meta'}));
+  const b=document.createElement('button');b.className='lnk';b.type='button';b.textContent='Dejar una nota';meta.append(b);
+  const av=document.createElement('span');av.className='av';meta.append(av);
+  const chat=document.createElement('div');chat.className='chat';it.append(chat);
+  const nota=document.createElement('div');nota.className='nota';nota.innerHTML='<textarea placeholder="Respuesta o nota"></textarea><button type="button">Enviar</button>';it.append(nota);
+  const c=ch.querySelector('input');
+  if(L('pa02-'+k)==='1'){c.checked=true;it.classList.add('hecho')}
+  c.addEventListener('change',async()=>{it.classList.toggle('hecho',c.checked);S('pa02-'+k,c.checked?'1':'0');
+    av.textContent='Guardando…';av.textContent=(await enviar({pieza:k,tipo:c.checked?'hecho':'pendiente'}))?'Guardado':'No se pudo guardar'});
+  b.addEventListener('click',()=>{nota.classList.toggle('on');nota.querySelector('textarea').focus()});
+  nota.querySelector('button').addEventListener('click',async()=>{const t=nota.querySelector('textarea');const v=t.value.trim();if(!v)return;
+    av.textContent='Enviando…';const ok=await enviar({pieza:k,tipo:'comentario',comentario:v});
+    av.textContent=ok?'Nota enviada':'No se pudo enviar';if(ok){burbuja(it,'Alessandro · ahora',v);t.value='';nota.classList.remove('on')}});
+});
+fetch('estado.json?t='+Date.now()).then(r=>r.ok?r.json():{}).then(j=>{
+  document.querySelectorAll('.item').forEach(it=>{const x=(j.estado||{})[it.dataset.k];
+    if(x){const c=it.querySelector('.chk input');c.checked=x==='hecho';it.classList.toggle('hecho',c.checked)}
+    ((j.notas||{})[it.dataset.k]||[]).forEach(m=>burbuja(it,m.quien,m.texto))})}).catch(()=>{});
+</script></body></html>
