@@ -1,5 +1,5 @@
 {
- "leido": "2026-11-02 16:31",
+ "leido": "2026-11-04 00:31",
  "estado": {
   "det": "hecho",
   "empujon": "hecho",
@@ -8,7 +8,18 @@
   "mx": "hecho",
   "pre": "hecho",
   "imcf": "hecho",
-  "lz": "hecho"
+  "lz": "hecho",
+  "acc": "hecho",
+  "ath": "hecho",
+  "bf": "hecho",
+  "lv": "hecho",
+  "asana": "hecho",
+  "wix": "hecho",
+  "torneos": "hecho",
+  "tryouts": "hecho",
+  "fotos": "hecho",
+  "media": "hecho",
+  "garantia": "hecho"
  },
  "notas": {}
 }
